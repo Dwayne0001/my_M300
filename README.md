@@ -30,6 +30,7 @@ Git Client wird benutzt um Repositories und Vagrant zu bedienen. Befehle werden 
 
 ## SSH Keys
 ![VirtualBox](images/ssh.PNG)
+Mit SSH können Verbindungen verschlüsselt werden. Dies wird hier eingesetzt, um die Verbindung zum Online Repository zu sichern.
 
 # Lernumbgebung
 
