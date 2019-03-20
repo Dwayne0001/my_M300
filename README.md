@@ -11,7 +11,8 @@
 
 # Umgebung
 ## Virtualbox
-![](../images/virtualbox.PNG "Virtualbox")
+Als Virtualisierungsplattform wird VirtualBox benutzt.
+Installiert wird dies simpel über ihre Website. [Link](https://www.virtualbox.org/wiki/Downloads)
 
 # Lernumbgebung
 
