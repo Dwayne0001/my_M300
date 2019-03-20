@@ -27,6 +27,10 @@ Visual Code Studio ist ein Quelltext Editor von Microsoft. Damit können Program
 ## Git Client
 ![VirtualBox](images/gitclient.PNG)
 Git Client wird benutzt um Repositories und Vagrant zu bedienen. Befehle werden dazu in die Git Client Commandzeile geschrieben.
+
+## SSH Keys
+![VirtualBox](images/ssh.PNG)
+
 # Lernumbgebung
 
 # Vagrant
