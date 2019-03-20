@@ -1,6 +1,6 @@
-#LB 1 Yanik Vonderschmitt
+# LB 1 Yanik Vonderschmitt
 
-##Inhaltsverzeichnis
+## Inhaltsverzeichnis
 
 - **Umgebung**
 - **Lernumgebung**
@@ -9,13 +9,13 @@
 - **PIHole**
 
 
-#Umgebung
+# Umgebung
 
-#Lernumbgebung
+# Lernumbgebung
 
-#Vagrant
+# Vagrant
 
-#Sicherheit
+# Sicherheit
 
-#PIHole
+# PIHole
 
