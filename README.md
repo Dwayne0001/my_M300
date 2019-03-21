@@ -5,25 +5,26 @@
 ## Inhaltsverzeichnis
 
   
-**Vorwort**
+[**Vorwort**](#Vorwort)
 
 **Umgebung**
-	- Virtualbox
 	- [VirtualBox](#Virtualbox)
-	- Git-Client
-	-  Vagrant
-	- Sicherheit
+	- [Git-Client](#Git-Client)
+	- [Vagrant](#Vagrant)
+	- [Sicherheit](#Sicherheit)
+	- [Netzwerk](#Netzwerk)
 
 **Umsetzung**
-- Uncomplicated Firewall (UFW)
-- Apache Webserver
+- [Uncomplicated Firewall (UFW)](#Uncomplicated Firewall (UFW))
+- [Apache Webserver](#Apache Webserver)
 
 **Schluss**
-- Reflexion
-- Wissensstand
-- Lernschritte
+- [Reflexion](#Reflexion)
+- [Wissensstand](#Wissensstand)
+- [Lernschritte](#Lernschritte)
 
 **Anhang**
+- [Versionen](#Versionen)
 
 
   
@@ -126,26 +127,48 @@ Wenn die VM gelöscht werden will wird dieser Befehl benutzt. Dazu muss sie heru
 
 Visual Code Studio ist ein Quelltext Editor von Microsoft. Damit können Programme in verschiedenen Programmiersprachen geschrieben werden. Plug-Ins können installiert werden und das arbeiten somit erleichtern.
 
-
-  
-
-## SSH Keys
-
-![VirtualBox](images/ssh.PNG)
-
-Mit SSH können Verbindungen verschlüsselt werden. Dies wird hier eingesetzt, um die Verbindung zum Online Repository zu sichern.
-
-  
-
-# Lernumbgebung
-
-  
-
-# Vagrant
-
-  
+### Plug-Ins
 
 # Sicherheit
 
-  
+## SSH Key zu GitHub
+
+  ![VirtualBox](images/ssh.PNG)
+
+Mit SSH können Verbindungen verschlüsselt werden. Dies wird hier eingesetzt, um die Verbindung zum Online Repository zu sichern.
+
+## SSH Tunnel
+Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss ins gleiche Verzeichnis wie die VM gewechselt und dann verbunden werden.
+```Shell
+      $ cd Zur\VM
+      $ vagrant ssh
+ ```
+
+## Firewallrules
+
+## Benutzer
+
+## Reverse Proxy
+
+# Netzwerkplan
+
+# Uncomplicated Firewall (UFW
+## Installation
+
+## Test
+
+# Apache Webserver
+## Installation
+
+## Test
+
+# Schluss
+## Reflexion
+
+## Wissensstand Vorher-Nachher
+
+## Lernschritte
+
+# Anhang
+## Versionen
 
