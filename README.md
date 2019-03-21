@@ -28,9 +28,10 @@
 
 
   
-  # Vorwort
-  ## Markdown
+ # Vorwort
+ ## Markdown
   Die Dokumentation ist im Markdown Format geschrieben. Dieses Format eignet sich sehr für die Website GitHub, da dort der Inhalt sofort angezeigt wird. [Wikipedia](https://de.wikipedia.org/wiki/Markdown)
+  
  ## GitHub
  GitHub ist eine Website um eigene Software-Entwicklungsprojekte online zu stellen. Dabei stellt GitHub den Speicherplatz zur Verfügung. GitHub arbeitet mit "repositories" was nichts anderes wie Speicherorte sind. Mittels Git-Client können ganze Repositories lokal auf den Computer importiert werden (Pull) und wiederum aufs auf Git-Hub exportiert werden(Push). So kann lokal gearbeitet werden. Hier die [Website](https://github.com/)
 
@@ -125,9 +126,14 @@ Wenn die VM gelöscht werden will wird dieser Befehl benutzt. Dazu muss sie heru
 
 ![VirtualBox](images/vcs.PNG)
 
-Visual Code Studio ist ein Quelltext Editor von Microsoft. Damit können Programme in verschiedenen Programmiersprachen geschrieben werden. Plug-Ins können installiert werden und das arbeiten somit erleichtern.
+Visual Code Studio ist ein Quelltext Editor von Microsoft. Damit können Programme in verschiedenen Programmiersprachen geschrieben werden. Plug-Ins können installiert werden umso das arbeiten zu erleichtern.
 
 ### Plug-Ins
+Um Plug_ins zu installieren muss die Tastenkombination `CTRL` + `SHIFT` + `X`gedrückt werden. Dann können Plug-Ins gesucht werden.
+Zum arbeiten an dieser LB wurden 3 Plug-Ins benutzt:
+-   Markdown All in One (von Yu Zhang)
+-   Vagrant Extension (von Marco Stanzi)
+-   vscode-pdf Extension (von tomiko1207)
 
 # Sicherheit
 
@@ -135,7 +141,7 @@ Visual Code Studio ist ein Quelltext Editor von Microsoft. Damit können Program
 
   ![VirtualBox](images/ssh.PNG)
 
-Mit SSH können Verbindungen verschlüsselt werden. Dies wird hier eingesetzt, um die Verbindung zum Online Repository zu sichern.
+Mit SSH können Verbindungen verschlüsselt werden. Dies wird hier eingesetzt, um die Verbindung zum Online Repository zu sichern, wenn dies Importiert oder Exportiert wird.
 
 ## SSH Tunnel
 Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss ins gleiche Verzeichnis wie die VM gewechselt und dann verbunden werden.
@@ -145,14 +151,22 @@ Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss
  ```
 
 ## Firewallrules
+Es benötigt nur 2 Regeln
+
+**Regel für SSH**
+Damit per SSH auf den Server verbunden werden kann, muss der **Port 22** geöffnet werden.
+**Regel für http**
+Damit schlussendlich auf den Webserver zugegriffen werden kann, muss der **Port 80** geöffnet werden.
+
 
 ## Benutzer
-
-## Reverse Proxy
+Vagrant erstellt automatisch einen Benutzer namens "Vagrant". Dieser hat bereits **Root** Rechte und kann somit alle benötigten Services installieren und konfigurieren.
 
 # Netzwerk
 
+
 ## Firewall
+Als FIrewall
 ### Installation
 
 ### Test
