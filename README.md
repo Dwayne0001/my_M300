@@ -15,7 +15,7 @@
 - [Netzwerk](#Netzwerk)
 
 **Umsetzung**
-- [Uncomplicated Firewall](#Uncomplicated Firewall)
+- [Firewall](#Firewall)
 - [Apache](#Apache)
 
 **Schluss**
@@ -152,7 +152,7 @@ Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss
 
 # Netzwerk
 
-## Uncomplicated Firewall
+## Firewall
 ### Installation
 
 ### Test
