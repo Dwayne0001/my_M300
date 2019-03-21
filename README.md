@@ -8,11 +8,11 @@
 [**Vorwort**](#Vorwort)
 
 **Umgebung**
-	- [VirtualBox](#Virtualbox)
-	- [Git-Client](#Git-Client)
-	- [Vagrant](#Vagrant)
-	- [Sicherheit](#Sicherheit)
-	- [Netzwerk](#Netzwerk)
+- [VirtualBox](#Virtualbox)
+- [Git-Client](#Git-Client)
+- [Vagrant](#Vagrant)
+- [Sicherheit](#Sicherheit)
+- [Netzwerk](#Netzwerk)
 
 **Umsetzung**
 - [Uncomplicated Firewall (UFW)](#Uncomplicated Firewall)
@@ -152,15 +152,15 @@ Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss
 
 # Netzwerk
 
-# Uncomplicated Firewall (UFW)
-## Installation
+## Uncomplicated Firewall
+### Installation
 
-## Test
+### Test
 
-# Apache Webserver
-## Installation
+## Apache Webserver
+### Installation
 
-## Test
+### Test
 
 # Schluss
 ## Reflexion
