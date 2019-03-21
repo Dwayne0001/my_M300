@@ -239,13 +239,27 @@ Wenn alles geklappt hat kann man die IP der VM im Browser des Hosts eingeben und
 
 # Schluss
 ## Reflexion
-Ich muss zugeben, dass ich den Aufwand der LB unterschätzt habe. Der Zeitaufwand 
+Ich muss zugeben, dass ich den Aufwand der LB unterschätzt habe. Der Zeitaufwand zum Verstehen von Vagrant und Markdown war grösser als erwartet. Nach den 2 Nachmittagen verstand ich diese 2 Sachen noch nicht sehr gut. Vielleicht liegt es am Umfeld in der TBZ, weil als ich mich Zuhause dahintergesetzt habe verstand ich es plötzlich. Zuhause konnte ich mich besser Konzentrieren. Dass alles am Schluss geklappt hat war sehr gut für meine Motivation für dieses Modul. Ich werde vielleicht Vagrant vermehrt einsatzen, da ich jetzt gelernt habe wie einfach und schnell man so VMs aufsetzen kann
 ## Wissensstand Vorher-Nachher
+**Vorher:**
 
+- Linux Grundwissen
+- Apache
+- Netzwerk
+
+**Nachher**
+
+Zusätzlich:
+
+- Vagrant
+- Markdown
+- GitHub Handhabung
 ## Lernschritte
 
 # Anhang
 ## Versionen
-UFW
-0.35
+
+**Uncomplicated** **Firewall**
+
+UFW 0.35
 
