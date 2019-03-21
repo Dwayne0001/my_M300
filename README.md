@@ -54,24 +54,28 @@ Git Client wird benutzt um Repositories und Vagrant zu bedienen. Befehle werden 
 Mittels Git-Befehle können Repositories verwaltet werden.
 
 **GitHub Account hinterlegen**
+
 Um mit seinen Online Repositories zu arbeiten muss der GitHub Account hinterlegt werden.
  ```Shell
       $ git config --global user.name "<username>"
 	  $ git config --global user.email "<e-mail>"
  ```
 **Repositories importieren**
+
 So werden Online Repositories lokal importiert.
 ```Shell
 	$ cd Wohin\auch\immer
 	$ git clone git@github.com:<Ihr Name>/my_M300.git
  ```
 **Repositories runterladen**
+
 Falls es Änderungen im Online Repository gibt, kann dieser so importiert werden. Dabei wird das veraltete auf die neue Version angepasst.
  ```Shell
 	$ git pull
  ```
  
 **Repositories hochladen**
+
 Um das lokale Repository online hochzuladen wird dieser Befehl benutzt. Dabei wird dann die Online Version mit der lokalen überschrieben.
  ```Shell
       $ git commit -m "Mein Kommentar"
@@ -89,6 +93,7 @@ Mit Vagrant ist es möglich ganz einfach VMs zu erstellen. Die Grundlage dabei i
 ### Vagrant Befehle
 Vagrant wird per Git-Client mit Befehlen gesteuert.
 **Neues Vagrantfile erstellen**
+
 Zuerst muss in den gewählten Ordner gewechselt werden und dort wird dann das Vagrantfile erstellt
 ```Shell
       $ cd Wohin\auch\immer
@@ -103,6 +108,7 @@ Um eine VM zu erstellen muss zuerst ins gleiche Verzeichnis wie das Vagrantfile 
  ```
 
 **Mittels SSH auf VM verbinden**
+
 Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss ins gleiche Verzeichnis wie die VM gewechselt und dann verbunden werden.
 
 ```Shell
@@ -110,16 +116,19 @@ Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss
       $ vagrant ssh
  ```
 **VM herunterfahren**
+
 Wenn man die VM herunter fahren möchte muss dieser Befehl eingegeben werden.
 ```Shell
       $ Vagrant halt
  ```
   
  **VM löschen**
+ 
 Wenn die VM gelöscht werden will wird dieser Befehl benutzt. Dazu muss sie herunter gefahren sein.
 ```Shell
       $ Vagrant destroy
  ```
+ 
  ### Vagrant Cloud-boxen
  Grosser Vorteil von Vagrant ist die Auswahl von den Base-boxen, aus welchen dann die VMs gemacht werden. Die Auswahl ist online auf dieser [Website](https://app.vagrantup.com/boxes/search) zu finden.
  
@@ -156,8 +165,10 @@ Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss
 Es benötigt nur 2 Regeln
 
 **Regel für SSH**
+
 Damit per SSH auf den Server verbunden werden kann, muss der **Port 22** geöffnet werden.
 **Regel für http**
+
 Damit schlussendlich auf den Webserver zugegriffen werden kann, muss der **Port 80** geöffnet werden.
 
 
@@ -170,15 +181,15 @@ Vagrant erstellt automatisch einen Benutzer namens "Vagrant". Dieser hat bereits
 ## VM
 Die VM wird im Vagrantfile folgendermassen installiert:
 ```Shell
-Vagrant.configure("2") do |config|						# Version der Konfiguration
+Vagrant.configure("2") do |config|
 
-config.vm.box =  "ubuntu/xenial64"						# Base-box ubuntu/yenial64
+config.vm.box =  "ubuntu/xenial64"
 
-config.vm.provider "virtualbox"  do |vb|				# Als Provider Virtualbox
+config.vm.provider "virtualbox"  do |vb|
 
-vb.memory =  "1024"										# RAM von 1024 GB
+vb.memory =  "1024"
 
-config.vm.network "private_network", ip: "10.71.13.18"	#Privates Netzwerk mit der IP 10.71.13.18
+config.vm.network "private_network", ip: "10.71.13.18"
 
 end
  ```
