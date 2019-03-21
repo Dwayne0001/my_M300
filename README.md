@@ -15,6 +15,7 @@
 - [Netzwerk](#Netzwerk)
 
 **Umsetzung**
+- [VM](#VM)
 - [Firewall](#Firewall)
 - [Apache](#Apache)
 
@@ -164,9 +165,25 @@ Vagrant erstellt automatisch einen Benutzer namens "Vagrant". Dieser hat bereits
 
 # Netzwerk
 
+# Umsetzung
+## VM
+Die VM wird im Vagrantfile folgendermassen installiert:
+```Shell
+Vagrant.configure("2") do |config|						# Version der Konfiguration
+
+config.vm.box =  "ubuntu/xenial64"						# Base-box ubuntu/yenial64
+
+config.vm.provider "virtualbox"  do |vb|				# Als Provider Virtualbox
+
+vb.memory =  "1024"										# RAM von 1024 GB
+
+config.vm.network "private_network", ip: "10.71.13.18"	#Privates Netzwerk mit der IP 10.71.13.18
+
+end
+ ```
 
 ## Firewall
-Als FIrewall
+Als Firewall wird der Dienst  "Uncomplicated Firewall" installiert. Dies ist eine leicht zu bedienende Firewall mit wenigen Befehlen.
 ### Installation
 
 ### Test
@@ -185,4 +202,6 @@ Als FIrewall
 
 # Anhang
 ## Versionen
+UFW
+0.35
 
