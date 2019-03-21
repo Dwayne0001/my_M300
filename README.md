@@ -15,7 +15,7 @@
 	- [Netzwerk](#Netzwerk)
 
 **Umsetzung**
-- [Uncomplicated Firewall (UFW)](#Uncomplicated Firewall (UFW))
+- [Uncomplicated Firewall (UFW)](#Uncomplicated Firewall)
 - [Apache Webserver](#Apache Webserver)
 
 **Schluss**
@@ -150,9 +150,9 @@ Es ist möglich per SSH Verschlüsselung sich mit der VM zu verbinden. Dazu muss
 
 ## Reverse Proxy
 
-# Netzwerkplan
+# Netzwerk
 
-# Uncomplicated Firewall (UFW
+# Uncomplicated Firewall (UFW)
 ## Installation
 
 ## Test
