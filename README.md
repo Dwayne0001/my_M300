@@ -195,19 +195,51 @@ end
  ```
 
 ## Firewall
-Als Firewall wird der Dienst  "Uncomplicated Firewall" installiert. Dies ist eine leicht zu bedienende Firewall mit wenigen Befehlen.
-### Installation
+Als Firewall wird der Dienst  "Uncomplicated Firewall" installiert. Dies ist eine leicht zu bedienende Firewall mit wenigen Befehlen. Hier der zur [Website](https://wiki.ubuntuusers.de/ufw/) Website.
 
+### Installation
+**Installieren**
+
+Zuerst wird der Paketdients aktualisiert. Das -y bestätigt die Installation. Der Dienst installiert wird so:
+```Shell
+    apt-get update
+    apt-get install -y ufw gufw
+ ```
+**Ports öffnen**
+
+Die Ports für SSH und http werden so geöffnet
+```Shell
+	ufw allow ssh
+	ufw allow 80/tcp
+ ```
+**Firewall Dienst starten**
+
+Nach der Konfiguration wird die Firewall gestartet. Das yes Y bestätigt die Installation.
+```Shell
+	yes Y | ufw enable
+ ```
+ 
 ### Test
+Testen kann man die Firewall indem man sie startet und die Ports nicht geöffnet hat. Dann ist der Zugriff per SSH und HTTP blockiert.
 
 ## Apache
 ### Installation
+Apache ist ein Webserver. Nach der Installation wird eine Standardwebseite aufgeschalten. Darum muss der Webserver nicht konfiguriert werden.
+
+**Installieren**
+
+Zuerst wird der Paketdients aktualisiert. Das -y bestätigt die Installation. Der Dienst installiert wird so:
+```Shell
+    apt-get update
+    apt-get install -y apache2
+ ```
 
 ### Test
+Wenn alles geklappt hat kann man die IP der VM im Browser des Hosts eingeben und die Standardwebseite erscheint.
 
 # Schluss
 ## Reflexion
-
+Ich muss zugeben, dass ich den Aufwand der LB unterschätzt habe. Der Zeitaufwand 
 ## Wissensstand Vorher-Nachher
 
 ## Lernschritte
