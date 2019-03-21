@@ -255,11 +255,37 @@ Zusätzlich:
 - Markdown
 - GitHub Handhabung
 ## Lernschritte
-
+1. Lernen ich wie man Git Bedient. Dies dauerte nicht lange, da es nicht viele Befehle waren.
+2. Erstellung einer VM per Vagrantfile. Ich fand dies schwieriger, da ich das Wissen aus dem Internet holen musst und so nur mit der Zeit zusammenhänge sichbar wurden.
+3. Dokumentieren mit Markdown. Ich benutzte dazu das CHeatsheet auf dem BSCW. Mit Übung kommt man auch schneller voran.
 # Anhang
 ## Versionen
 
+**Virtualbox**
+
+Version 5.2.26 r128414
+
+**Vagrant**
+
+Version 2.2.4
+
+**Visual** **Code** **Studio**
+
+Version 1.32.3
+
+**Git**-**Client**
+
+Version 2.21.0
+
 **Uncomplicated** **Firewall**
 
-UFW 0.35
+Version 0.35
+
+**Apache**
+
+Version 2.4
+
+
+
+
 
