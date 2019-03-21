@@ -95,6 +95,7 @@ Zuerst muss in den gewählten Ordner gewechselt werden und dort wird dann das Va
       $ vagrant init
  ```
 **VM erstellen lassen**
+
 Um eine VM zu erstellen muss zuerst ins gleiche Verzeichnis wie das Vagrantfile gewechselt werden und dann wird die VM erstellt.
  ```Shell
       $ cd Zum\Vagrantfile
