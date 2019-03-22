@@ -206,7 +206,7 @@ Als Firewall wird der Dienst  "Uncomplicated Firewall" installiert. Dies ist ein
 Zuerst wird der Paketdients aktualisiert. Das -y bestätigt die Installation. Der Dienst installiert wird so:
 ```Shell
     apt-get update
-    apt-get install -y ufw gufw
+    apt-get install -y ufw gufw 
  ```
 **Ports öffnen**
 
