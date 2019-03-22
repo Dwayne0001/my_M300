@@ -284,8 +284,3 @@ Version 0.35
 **Apache**
 
 Version 2.4
-
-
-
-
-
