@@ -177,7 +177,8 @@ Vagrant erstellt automatisch einen Benutzer namens "Vagrant". Dieser hat bereits
 
 # Netzwerk
 ![Netzwerkplan](images/Netzwerkplan.png)
-Der Zugriff zwischen Host und VM geschieht nur im LAN. Darum ist die VM01 auf Privat Network konfguriert.
+
+Der Zugriff zwischen Host und VM geschieht nur im LAN des Hosts. Darum ist die VM01 auf Privat Network konfguriert.
 
 # Umsetzung
 ## VM
