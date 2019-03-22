@@ -86,7 +86,7 @@ Um das lokale Repository online hochzuladen wird dieser Befehl benutzt. Dabei wi
 ## Vagrant
 ### Infos
 
-![VirtualBox](images/Vagrant.PNG)
+![Vagrant](images/Vagrant.PNG)
 
 Mit Vagrant ist es möglich ganz einfach VMs zu erstellen. Die Grundlage dabei ist eine Base-Box eines OS. Dies ist nichts anderes als eine blanke VM des OS. Mit einem Vagranfile wird dann diese Base-Box ausgewählt und Konfiguriert. So kann ganz einfach VMs erstellt werden.
 
