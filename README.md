@@ -47,7 +47,7 @@ Als Virtualisierungsplattform wird VirtualBox benutzt. Installiert wird dies sim
 
 ## Git-Client
 ### Infos
-![VirtualBox](images/gitclient.PNG)
+![Git-Client](images/gitclient.PNG)
 
 Git Client wird benutzt um Repositories und Vagrant zu bedienen. Befehle werden dazu in die Git Client Kommandozeile geschrieben. Ihn kann man auf dieser [Website](https://git-scm.com/downloads) herunterladen und installieren.
 ### Git-Client Befehle
@@ -64,8 +64,8 @@ Um mit seinen Online Repositories zu arbeiten muss der GitHub Account hinterlegt
 
 So werden Online Repositories lokal importiert.
 ```Shell
-	$ cd Wohin\auch\immer
-	$ git clone git@github.com:<Ihr Name>/my_M300.git
+$ cd Wohin\auch\immer
+$ git clone git@github.com:<Ihr Name> my_M300.git
  ```
 **Repositories runterladen**
 
@@ -135,7 +135,7 @@ Wenn die VM gelöscht werden will wird dieser Befehl benutzt. Dazu muss sie heru
 
 ## Visual Code Studio
 
-![VirtualBox](images/vcs.PNG)
+![Visual Code Studio](images/vcs.PNG)
 
 Visual Code Studio ist ein Quelltext Editor von Microsoft. Damit können Programme in verschiedenen Programmiersprachen geschrieben werden. Plug-Ins können installiert werden umso das arbeiten zu erleichtern.
 
@@ -150,7 +150,7 @@ Zum arbeiten an dieser LB wurden 3 Plug-Ins benutzt:
 
 ## SSH Key zu GitHub
 
-  ![VirtualBox](images/ssh.PNG)
+  ![SSH](images/ssh.PNG)
 
 Mit SSH können Verbindungen verschlüsselt werden. Dies wird hier eingesetzt, um die Verbindung zum Online Repository zu sichern, wenn dies Importiert oder Exportiert wird.
 
