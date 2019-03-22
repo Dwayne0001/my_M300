@@ -176,6 +176,8 @@ Damit schlussendlich auf den Webserver zugegriffen werden kann, muss der **Port 
 Vagrant erstellt automatisch einen Benutzer namens "Vagrant". Dieser hat bereits **Root** Rechte und kann somit alle benötigten Services installieren und konfigurieren.
 
 # Netzwerk
+![Netzwerkplan](images/Netzwerkplan.png)
+Der Zugriff zwischen Host und VM geschieht nur im LAN. Darum ist die VM01 auf Privat Network konfguriert.
 
 # Umsetzung
 ## VM
