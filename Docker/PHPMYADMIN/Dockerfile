@@ -1,3 +1,1 @@
-FROM phpmyadmin/phpmyadmin
-
-EXPOSE 80:8080
+docker run -d --name phpmyadmin --network=Net1  -e PMA_HOST=mysql -p 8080:80 phpmyadmin/phpmyadmin:latest
