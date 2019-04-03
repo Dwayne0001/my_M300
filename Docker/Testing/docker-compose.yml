@@ -1,0 +1,11 @@
+version: "3"
+services: 
+  apache:
+    image: httpd:latest
+    ports:
+      - "8080:80"
+    networks:
+      - Net1
+
+networks:
+  Net1:
