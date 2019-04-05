@@ -1,20 +1,26 @@
 version: '3.7'
-
 services:
   db:
-    image: mysql/mysql-server:latest
-    restart: always
+    image: mysql/mysql-server:5.7
     container_name: mysql
-    environment:
+    volumes:
+     - ./data/mysql:/var/lib/mysql
+    networks:
+    - Net1
+    restart: always
 
   php:
     depends_on:
       - db
     image: phpmyadmin/phpmyadmin:latest
     container_name: PHPMyAdmin
+    networks:
+    - Net1
     ports:
-      - "8080:80"
+      - "8081:80"
     restart: always
-    PMA_HOST: db
     environment:
       MYSQL_ROOT_PASSWORD: 'Qawsed123'
+
+networks:
+  Net1:
