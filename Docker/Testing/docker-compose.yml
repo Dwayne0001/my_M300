@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   db:
-    image: mysql/mysql-server:5.7
+    image: mysql:5.7
     container_name: mysql
     networks:
     - Net1
@@ -18,7 +18,7 @@ services:
     networks:
     - Net1
     ports:
-      - "8081:80"
+      - "8082:80"
     restart: always
     environment:
       PMA_HOST: db
