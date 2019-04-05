@@ -3,11 +3,12 @@ services:
   db:
     image: mysql/mysql-server:5.7
     container_name: mysql
-    volumes:
-     - ./data/mysql:/var/lib/mysql
     networks:
     - Net1
     restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: 'Qawsed123'
+      MYSQL_DATABASE: Database
 
   php:
     depends_on:
@@ -20,6 +21,7 @@ services:
       - "8081:80"
     restart: always
     environment:
+      PMA_HOST: db
       MYSQL_ROOT_PASSWORD: 'Qawsed123'
 
 networks:
