@@ -14,6 +14,14 @@ Als Service wird eine eigene **MySQL** **Datenbank** mit **PHPMyAdmin** administ
 
 # Kapitel 2 Technische Angaben
 
+Der Service wird mit 2 Docker Container realisiert.
+| **Info**     | **Container** 1 |   **Container** 2 |
+| :----------- | :-------------: | ----------------: |
+| Name         |    **MySQL**    |    **PHPMyAdmin** |
+| Docker Image |    mysql:5.7    | phpmyadmin:latest |
+| Netzwerk     |      Net1       |              Net1 |
+| IP           |      DHCP       |              DHCP |
+
 ## Netzwerkplan
 
 ![Netzwerk](Images/netzwerk.jpg)
