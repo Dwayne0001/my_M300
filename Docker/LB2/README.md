@@ -16,6 +16,7 @@ Als Service wird eine eigene **MySQL** **Datenbank** mit **PHPMyAdmin** administ
 
 ## Netzwerkplan
 
+![Netzwerk](Images/netzwerk.jpg)
 
 ## Anleitung für den Betrieb
 
