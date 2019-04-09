@@ -15,6 +15,7 @@ Als Service wird eine eigene **MySQL** **Datenbank** mit **PHPMyAdmin** administ
 # Kapitel 2 Technische Angaben
 
 Der Service wird mit 2 Docker Container realisiert.
+
 | **Info**     | **Container** 1 |   **Container** 2 |
 | :----------- | :-------------: | ----------------: |
 | Name         |    **MySQL**    |    **PHPMyAdmin** |
