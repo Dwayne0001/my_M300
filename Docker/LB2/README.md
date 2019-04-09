@@ -10,22 +10,25 @@
 
 Als Service wird eine eigene **MySQL** **Datenbank** mit **PHPMyAdmin** administriert. Anstatt per Command Line wird bei PHPMyAdmin die MySQL Datenbank per Webinterface bedient. Durch den Visuellen Faktor und dem übersichtlichem GUI wird die Arbeit mit den MYSQL Datenbank sehr vereinfacht.
 
+Per Interner Verlinkung zwischen MySQL und PHPMyAdmin kann dies ermöglicht werden.
+
 ![GUI](Images/GUI.PNG)
 
 # Kapitel 2 Technische Angaben
 
 Der Service wird mit 2 Docker Container realisiert.
 
-| **Info**     | **Container** 1 |   **Container** 2 |
-| :----------- | :-------------: | ----------------: |
-| Name         |    **MySQL**    |    **PHPMyAdmin** |
-| Docker Image |    mysql:5.7    | phpmyadmin:latest |
-| Netzwerk     |      Net1       |              Net1 |
-| IP           |      DHCP       |              DHCP |
+| **Info**       | **Container** 1 |   **Container** 2 |
+| :------------- | :-------------: | ----------------: |
+| Container Name |      MySQL      |        PHPMyAdmin |
+| Docker Image   |    mysql:5.7    | phpmyadmin:latest |
+| Netzwerk       |      Net1       |              Net1 |
+| IP             |      DHCP       |              DHCP |
 
 ## Netzwerkplan
 
 ![Netzwerk](Images/netzwerk.jpg)
+
 
 ## Anleitung für den Betrieb
 
