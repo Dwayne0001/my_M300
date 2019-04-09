@@ -13,7 +13,7 @@ services:
   php:
     depends_on:
       - db
-    image: phpmyadmin/phpmyadmin:latest
+    image: phpmyadmin:latest
     container_name: PHPMyAdmin
     networks:
     - Net1

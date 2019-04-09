@@ -1,6 +1,6 @@
-# **LB2** **Docker**
+# **LB2** **Docker**  <!-- omit in toc -->
 
-- [**LB2** **Docker**](#lb2-docker)
+
 - [Kapitel 1 Der Service](#kapitel-1-der-service)
 - [Kapitel 2 Technische Angaben](#kapitel-2-technische-angaben)
   - [Netzwerkplan](#netzwerkplan)
@@ -8,9 +8,14 @@
 
 # Kapitel 1 Der Service
 
+Als Service wird eine eigene **MySQL** **Datenbank** mit **PHPMyAdmin** administriert. Anstatt per Command Line wird bei PHPMyAdmin die MySQL Datenbank per Webinterface bedient. Durch den Visuellen Faktor und dem übersichtlichem GUI wird die Arbeit mit den MYSQL Datenbank sehr vereinfacht.
+
+![GUI](Images/GUI.PNG)
+
 # Kapitel 2 Technische Angaben
 
 ## Netzwerkplan
+
 
 ## Anleitung für den Betrieb
 
