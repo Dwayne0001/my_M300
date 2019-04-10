@@ -99,7 +99,7 @@ docker-compose -f ʺPfad\zum\File\docker-compose.ymlʺ up -d --build
  ```
 Wenn alles geklappt hat sieht es so aus:
 
-![Insatllation](Images\installation.PNG)
+![Insatllation](Images\installation.jpg)
  ### 2. Zugriff auf Webinterface <!-- omit in toc -->
 
 - Um auf PHPMyAdmin zuzugreifen, muss ein Browser geöffnet werden.
