@@ -1,6 +1,7 @@
 # **LB2** **Docker**  <!-- omit in toc -->
 
 ## Inhalt <!-- omit in toc -->
+- [Einleitung](#einleitung)
 - [Kapitel 1 Der Service](#kapitel-1-der-service)
 - [Kapitel 2 Technische Angaben](#kapitel-2-technische-angaben)
   - [Netzwerkplan](#netzwerkplan)
@@ -9,6 +10,10 @@
 - [Kapitel 3 Testing](#kapitel-3-testing)
 - [Kapitel 4 Troubleshooting](#kapitel-4-troubleshooting)
 - [Quellen](#quellen)
+
+# Einleitung
+
+In der Lernberuteilung geht es um das Ausetzten und betreiben von einem Service mit Docker. Docker ist eine Open-Source Containervirtualisierungsplatfform. Dank dem Docker Hub können viele Images von Anwendungen oder Betriebssystemen heruntergeladen werden.
 
 # Kapitel 1 Der Service
 
