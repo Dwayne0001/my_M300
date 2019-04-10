@@ -99,7 +99,7 @@ docker-compose -f ʺPfad\zum\File\docker-compose.ymlʺ up -d --build
  ```
 Wenn alles geklappt hat sieht es so aus:
 
-![Insatllation](Images\installation.jpg)
+![Installation](Images/installation.jpg)
  ### 2. Zugriff auf Webinterface <!-- omit in toc -->
 
 - Um auf PHPMyAdmin zuzugreifen, muss ein Browser geöffnet werden.
@@ -108,7 +108,7 @@ Wenn alles geklappt hat sieht es so aus:
 
 Nun sieht das Fenster so aus:
 
-![Web](Images\web.png)
+![Web](Images/web.png)
 
 ### 3. PHPMyAdmin Login <!-- omit in toc -->
 Als Benutzer wird wir **Root** genommen
@@ -118,6 +118,7 @@ Das Passwort ist **Qawsed123**
 Die Anmeldung erflogt beim drücken der Enter-taste
 
 Das Fenster sieht jetzt so aus:
+
 ![php](images/php.png)
 
 ### 4. Los arbeiten mit PHPMyAmdin <!-- omit in toc -->
