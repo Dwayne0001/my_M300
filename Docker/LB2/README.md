@@ -109,7 +109,7 @@ Wenn alles geklappt hat sieht es so aus:
 
 Nun sieht das Fenster so aus:
 
-
+![installation](Images/installation.PNG)
 
 ### 3. PHPMyAdmin Login <!-- omit in toc -->
 Als Benutzer wird wir **Root** genommen
