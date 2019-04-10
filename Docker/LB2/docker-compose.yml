@@ -12,7 +12,7 @@ services:                               # Auflistung der Services
 
   php:                                  # Anfang PHPMyAdmin Service
     depends_on:                         # Anfang Abhänigkeit
-      - db                              #Abhängig von Service db
+      - db                              # Abhängig vom Service db
     image: phpmyadmin:latest            # Docker Image
     container_name: PHPMyAdmin          # Containername
     networks:                           # Anfang Netzwerkkonfiguration

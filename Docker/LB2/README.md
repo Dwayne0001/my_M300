@@ -54,19 +54,19 @@ Hier der Code des docker-compose.yml File:
 ```Shell
 1 version: '3.7'                          # Version von docker-compose.yml
 2 services:                               # Auflistung der Services
-3  db:                                   # Anfang MySQL Service
-4    image: mysql:5.7                    # Docker Image
-5    container_name: mysql               # Containername
-6    networks:                           # Anfang Netzwerkkonfiguration
-7    - Net1                              # Net1 als Netzwerk gesetzt
-8    restart: always                     # Nach erstellen Neustarten
-9    environment:                        # Anfang environment Parameter
+3  db:                                    # Anfang MySQL Service
+4    image: mysql:5.7                     # Docker Image
+5    container_name: mysql                # Containername
+6    networks:                            # Anfang Netzwerkkonfiguration
+7    - Net1                               # Net1 als Netzwerk gesetzt
+8    restart: always                      # Nach erstellen Neustarten
+9    environment:                         # Anfang environment Parameter
 10      MYSQL_ROOT_PASSWORD: 'Qawsed123'  # Rootpasswort von MySQL setzen
 11      MYSQL_DATABASE: New_Database      # Neue Datenbank erstellt
 12
 13  php:                                  # Anfang PHPMyAdmin Service
 14    depends_on:                         # Anfang Abhänigkeit
-15      - db                              #Abhängig von Service db
+15      - db                              # Abhängig vom Service db
 16    image: phpmyadmin:latest            # Docker Image
 17    container_name: PHPMyAdmin          # Containername
 18    networks:                           # Anfang Netzwerkkonfiguration
@@ -77,14 +77,18 @@ Hier der Code des docker-compose.yml File:
 23    environment:                        # Anfang environment Parameter
 24      PMA_HOST: db                      # MySQL Datenbank ist db
 25
-26 networks:                               # Anfang allgemeine Netzwerkkonfiguration
+26 networks:                              # Anfang allgemeine Netzwerkkonfiguration
 27  Net1:                                 # Netzwerk Net1 erstellt
  ```
+Jede Zeile wurde mit einem "#" Kommentiert.
+
 Auf Zeile 3-11 wird der MySQL Container erstellt und konfiguriert
 
 Auf Zeile 13-24 wird der PHPMyAdmin Container erstellt. Dabei wird auf Zeile 24 die Verlinkung zwischen PHPMyAdmin und MySQL realisiert(db = MySQL Container).
 
-Auf der
+Auf der Zeile 26-27 wird das Netzwerk erstellt
+
+Das File ist auf meinem GitHub LB2 [Repository][lb2git] abgelegt
 
 ## Anleitung für den Betrieb
 
@@ -115,6 +119,8 @@ Docker Compose [Dokumentation][dc]
 [php]: https://hub.docker.com/r/phpmyadmin/phpmyadmin/
 
 [mygit]: https://github.com/YanikVonderschmitt/my_M300
+
+[lb2git]: https://github.com/YanikVonderschmitt/my_M300/tree/master/Docker/LB2
 
 [m300git]: https://github.com/mc-b/M300
 
