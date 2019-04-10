@@ -134,6 +134,16 @@ Offizielle MySQL [Website][osql]
 
 # Kapitel 3 Testing
 
+Das Testing wir mit einem Testing Protokoll durchgeführt. Dabei wird er SOLL / IST Zustand Verglichen und erläutert wie getestet wurde.
+
+| SOLL-Zustand                              |                      IST-Zustand                      |                                                                                                            Test |
+| :---------------------------------------- | :---------------------------------------------------: | --------------------------------------------------------------------------------------------------------------: |
+| 2 Container wurden per Befehl installiert | Die 2 Container wurden erstellt und werden ausgeführt | In Powershell wurde der Befehl docker-compose -f "C:\myrep\my_M300\Docker\LB2\docker-compose.yml" up -d --build |
+| Docker Image                              |                       mysql:5.7                       |                                                                                               phpmyadmin:latest |
+| Netzwerk                                  |                         Net1                          |                                                                                                            Net1 |
+| IP                                        |                         DHCP                          |                                                                                                            DHCP |
+
+
 # Kapitel 4 Troubleshooting
 
 # Quellen
