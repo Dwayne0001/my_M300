@@ -92,6 +92,44 @@ Das File ist auf meinem GitHub LB2 [Repository][lb2git] abgelegt
 
 ## Anleitung für den Betrieb
 
+### 1. Installation <!-- omit in toc -->
+Wie oben beim Code erklärt wird per Befehel das Docker-Compose.yml ausgeführt und somit die Container aufgesetzt:
+```Shell
+docker-compose -f ʺPfad\zum\File\docker-compose.ymlʺ up -d --build
+ ```
+Wenn alles geklappt hat sieht es so aus:
+
+![Insatllation](Images\installation.PNG)
+ ### 2. Zugriff auf Webinterface <!-- omit in toc -->
+
+- Um auf PHPMyAdmin zuzugreifen, muss ein Browser geöffnet werden.
+
+- Es wird die URL http://localhost:8080 eigegeben
+
+Nun sieht das Fenster so aus:
+
+![Web](Images\web.png)
+
+### 3. PHPMyAdmin Login <!-- omit in toc -->
+Als Benutzer wird wir **Root** genommen
+
+Das Passwort ist **Qawsed123**
+
+Die Anmeldung erflogt beim drücken der Enter-taste
+
+Das Fenster sieht jetzt so aus:
+![php](images/php.png)
+
+### 4. Los arbeiten mit PHPMyAmdin <!-- omit in toc -->
+
+AB jetzt kann mit PHPMyAdmin gearbeitet werden. Es können Datenbanken erstellt und administriert werden.
+
+Wenn benötigt können neue Benutzer angelegt werden.
+
+Offizielle PHPMyAdmin [Website][ophp]
+
+Offizielle MySQL [Website][osql]
+
 # Kapitel 3 Testing
 
 # Kapitel 4 Troubleshooting
@@ -106,12 +144,17 @@ MySQL:5.7 [Docker Hub][sql]
 
 **Benutzte** **Websites**:
 
-Mein GitHub [Repository][mygit]
+Mein allgemeines GitHub [Repository][mygit]
+
+Mein LB 2 GitHub [Repository][lb2git]
 
 Modul 300 [Repository][m300git]
 
 Docker Compose [Dokumentation][dc]
 
+Offizielle PHPMyAdmin [Website][ophp]
+
+Offizielle MySQL [Website][osql]
 <!-- Link Index -->
 
 [sql]: https://hub.docker.com/_/mysql
@@ -125,3 +168,7 @@ Docker Compose [Dokumentation][dc]
 [m300git]: https://github.com/mc-b/M300
 
 [dc]: https://docs.docker.com/compose/
+
+[ophp]: https://www.phpmyadmin.net/
+
+[osql]: https://www.mysql.com/de/
