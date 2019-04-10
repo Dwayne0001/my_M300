@@ -52,34 +52,39 @@ docker-compose -f ʺPfad\zum\File\docker-compose.ymlʺ up -d --build
 
 Hier der Code des docker-compose.yml File:
 ```Shell
-version: '3.7'                          # Version von docker-compose.yml
-services:                               # Auflistung der Services
-  db:                                   # Anfang MySQL Service
-    image: mysql:5.7                    # Docker Image
-    container_name: mysql               # Containername
-    networks:                           # Anfang Netzwerkkonfiguration
-    - Net1                              # Net1 als Netzwerk gesetzt
-    restart: always                     # Nach erstellen Neustarten
-    environment:                        # Anfang environment Parameter
-      MYSQL_ROOT_PASSWORD: 'Qawsed123'  # Rootpasswort von MySQL setzen
-      MYSQL_DATABASE: New_Database      # Neue Datenbank erstellt
-
-  php:                                  # Anfang PHPMyAdmin Service
-    depends_on:                         # Anfang Abhänigkeit
-      - db                              #Abhängig von Service db
-    image: phpmyadmin:latest            # Docker Image
-    container_name: PHPMyAdmin          # Containername
-    networks:                           # Anfang Netzwerkkonfiguration
-    - Net1                              # Net1 als Netzwerk gesetzt
-    ports:                              # Anfang Portmapping
-      - "8080:80"                       # Container Port 80 auf Localhost Port 8080
-    restart: always                     # Nach erstellen Neustarten
-    environment:                        # Anfang environment Parameter
-      PMA_HOST: db                      # MySQL Datenbank ist db
-
-networks:                        # Anfang allgemeine Netzwerkkonfiguration
-  Net1:                                 # Netzwerk Net1 erstellt
+1 version: '3.7'                          # Version von docker-compose.yml
+2 services:                               # Auflistung der Services
+3  db:                                   # Anfang MySQL Service
+4    image: mysql:5.7                    # Docker Image
+5    container_name: mysql               # Containername
+6    networks:                           # Anfang Netzwerkkonfiguration
+7    - Net1                              # Net1 als Netzwerk gesetzt
+8    restart: always                     # Nach erstellen Neustarten
+9    environment:                        # Anfang environment Parameter
+10      MYSQL_ROOT_PASSWORD: 'Qawsed123'  # Rootpasswort von MySQL setzen
+11      MYSQL_DATABASE: New_Database      # Neue Datenbank erstellt
+12
+13  php:                                  # Anfang PHPMyAdmin Service
+14    depends_on:                         # Anfang Abhänigkeit
+15      - db                              #Abhängig von Service db
+16    image: phpmyadmin:latest            # Docker Image
+17    container_name: PHPMyAdmin          # Containername
+18    networks:                           # Anfang Netzwerkkonfiguration
+19    - Net1                              # Net1 als Netzwerk gesetzt
+20    ports:                              # Anfang Portmapping
+21      - "8080:80"                       # Container Port 80 auf Localhost Port 8080
+22    restart: always                     # Nach erstellen Neustarten
+23    environment:                        # Anfang environment Parameter
+24      PMA_HOST: db                      # MySQL Datenbank ist db
+25
+26 networks:                               # Anfang allgemeine Netzwerkkonfiguration
+27  Net1:                                 # Netzwerk Net1 erstellt
  ```
+Auf Zeile 3-11 wird der MySQL Container erstellt und konfiguriert
+
+Auf Zeile 13-24 wird der PHPMyAdmin Container erstellt. Dabei wird auf Zeile 24 die Verlinkung zwischen PHPMyAdmin und MySQL realisiert(db = MySQL Container).
+
+Auf der
 
 ## Anleitung für den Betrieb
 
