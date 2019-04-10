@@ -136,12 +136,12 @@ Offizielle MySQL [Website][osql]
 
 Das Testing wir mit einem Testing Protokoll durchgeführt. Dabei wird er SOLL / IST Zustand Verglichen und erläutert wie getestet wurde.
 
-| SOLL-Zustand                              |                          IST-Zustand                          |                                                                                                            Test |
-| :---------------------------------------- | :-----------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------: |
-| 2 Container wurden per Befehl installiert |     Die 2 Container wurden erstellt und werden ausgeführt     | In Powershell wurde der Befehl docker-compose -f "C:\myrep\my_M300\Docker\LB2\docker-compose.yml" up -d --build |
-| Das Netzwerk "Net1" wurde erstellt        | Das Netzwerk wurde während dem Ausführen des Befehls erstellt |                                        Mit dem Befehl: Docker Network ls werden alle Docker Netzwerke angezeigt |
-| Netzwerk                                  |                             Net1                              |                                                                                                            Net1 |
-| IP                                        |                             DHCP                              |                                                                                                            DHCP |
+| SOLL-Zustand                                                             |                                      IST-Zustand                                      |                                                                                                            Test |
+| :----------------------------------------------------------------------- | :-----------------------------------------------------------------------------------: | --------------------------------------------------------------------------------------------------------------: |
+| 2 Container wurden per Befehl installiert                                |                 Die 2 Container wurden erstellt und werden ausgeführt                 | In Powershell wurde der Befehl docker-compose -f "C:\myrep\my_M300\Docker\LB2\docker-compose.yml" up -d --build |
+| Das Netzwerk "Net1" wurde erstellt                                       |             Das Netzwerk wurde während dem Ausführen des Befehls erstellt             |                                        Mit dem Befehl: Docker Network ls werden alle Docker Netzwerke angezeigt |
+| Die Portverlinkung von PHPMyAdmin von Port 80 auf 8080 ist gewährleistet | Mit http://localhost:8080 kann auf das Webinterface von PHPMyAdmin zugegriffen werden |                                                             Im Browser die Adresse http://localhost:8080 öffnen |
+| IP                                                                       |                                         DHCP                                          |                                                                                                            DHCP |
 
 
 # Kapitel 4 Troubleshooting
