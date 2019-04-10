@@ -99,7 +99,7 @@ docker-compose -f ʺPfad\zum\File\docker-compose.ymlʺ up -d --build
  ```
 Wenn alles geklappt hat sieht es so aus:
 
-
+![installation](Images/installation.PNG)
 
  ### 2. Zugriff auf Webinterface <!-- omit in toc -->
 
@@ -109,7 +109,7 @@ Wenn alles geklappt hat sieht es so aus:
 
 Nun sieht das Fenster so aus:
 
-![installation](Images/installation.PNG)
+![Web](Images/web.PNG)
 
 ### 3. PHPMyAdmin Login <!-- omit in toc -->
 Als Benutzer wird wir **Root** genommen
@@ -120,6 +120,7 @@ Die Anmeldung erflogt beim drücken der Enter-taste
 
 Das Fenster sieht jetzt so aus:
 
+![PHP](Images/GUI.PNG)
 
 ### 4. Los arbeiten mit PHPMyAmdin <!-- omit in toc -->
 
