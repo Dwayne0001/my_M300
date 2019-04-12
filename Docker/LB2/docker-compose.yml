@@ -1,4 +1,5 @@
 version: '3.7'                            # Version von docker-compose.yml
+
 services:                                 # Auflistung der Services
   datenbank:                              # Anfang MySQL Service
     image: mysql:5.7                      # Docker Image
@@ -29,8 +30,9 @@ services:                                 # Auflistung der Services
   
   wordpress:                              # Anfang Worpress Service
       depends_on:                         # Anfang Abhängigkeit
-       - datenbank                        # Abhängif von MySQL Datenbank
+       - datenbank                        # Abhängig von MySQL Datenbank
       image: wordpress:latest             # Docker Image
+      container_name: wordpress           # Containername
       ports:                              # Anfang Portmapping
        - "8081:80"                        # Container Port 80 auf Localhost Port 8081
       restart: always                     # Nach erstellen Neustarten

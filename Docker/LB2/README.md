@@ -146,7 +146,7 @@ Das Testing wir mit einem Testing Protokoll durchgeführt. Dabei wird er SOLL / 
 | 2 Container wurden per Befehl installiert                                |                 Die 2 Container wurden erstellt und werden ausgeführt                 | In Powershell wurde der Befehl docker-compose -f "C:\myrep\my_M300\Docker\LB2\docker-compose.yml" up -d --build |
 | Das Netzwerk "Net1" wurde erstellt                                       |             Das Netzwerk wurde während dem Ausführen des Befehls erstellt             |                                        Mit dem Befehl: Docker Network ls werden alle Docker Netzwerke angezeigt |
 | Die Portverlinkung von PHPMyAdmin von Port 80 auf 8080 ist gewährleistet | Mit http://localhost:8080 kann auf das Webinterface von PHPMyAdmin zugegriffen werden |                                                             Im Browser die Adresse http://localhost:8080 öffnen |
-| Mit dem Gesetzten Root Login kann man sich anmelden                      |        Mit dem Benutzername Root und Passwort Qawsed123 kann eingelogt werden         |                                                                                                            In der Anmeldemaske von PHPMyAdmin werden die Login Daten eingegeben |
+| Mit dem Gesetzten Root Login kann man sich anmelden                      |        Mit dem Benutzername Root und Passwort Qawsed123 kann eingelogt werden         |                                            In der Anmeldemaske von PHPMyAdmin werden die Login Daten eingegeben |
 
 
 # Kapitel 4 Troubleshooting
