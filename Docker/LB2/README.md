@@ -14,6 +14,8 @@
 
 In der Lernberuteilung geht es um das Ausetzten und betreiben von einem Service mit Docker. Docker ist eine Open-Source Containervirtualisierungsplatfform. Dank dem Docker Hub können viele Images von Anwendungen oder Betriebssystemen heruntergeladen werden.
 
+Die LB2 wurde zusammen mit Herrn Rutz und Herrn Grob ausgearbeitet.
+
 # Kapitel 1 Der Service
 
 Als Service wird **Wordpress** realisiert. Im Hintergrund wird **MySQL** benutzt. Zuätzlich ist es möglich dank **PHPMyAdmin** per Webinterface die Datenbanken zu administrieren. Durch den Visuellen Faktor und dem übersichtlichem GUI wird die Arbeit mit den MYSQL Datenbank sehr vereinfacht. 
