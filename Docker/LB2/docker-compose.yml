@@ -1,18 +1,22 @@
 version: '3.7'                          # Version von docker-compose.yml
 services:                               # Auflistung der Services
-  db:                                   # Anfang MySQL Service
+  datenbank:                                   # Anfang MySQL Service
     image: mysql:5.7                    # Docker Image
-    container_name: mysql               # Containername
+    container_name: mysql
+    volumes:
+       - db_data:/var/lib/mysql               # Containername
     networks:                           # Anfang Netzwerkkonfiguration
     - Net1                              # Net1 als Netzwerk gesetzt
     restart: always                     # Nach erstellen Neustarten
     environment:                        # Anfang environment Parameter
-      MYSQL_ROOT_PASSWORD: 'Qawsed123'  # Rootpasswort von MySQL setzen
-      MYSQL_DATABASE: New_Database      # Neue Datenbank erstellt
+      MYSQL_ROOT_PASSWORD: '1234'       # Rootpasswort von MySQL setzen
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: user
+      MYSQL_PASSWORD: 1234      # Neue Datenbank erstellt
 
   php:                                  # Anfang PHPMyAdmin Service
     depends_on:                         # Anfang Abhänigkeit
-      - db                              # Abhängig vom Service db
+      - datenbank                              # Abhängig vom Service db
     image: phpmyadmin:latest            # Docker Image
     container_name: PHPMyAdmin          # Containername
     networks:                           # Anfang Netzwerkkonfiguration
@@ -21,7 +25,24 @@ services:                               # Auflistung der Services
       - "8080:80"                       # Container Port 80 auf Localhost Port 8080
     restart: always                     # Nach erstellen Neustarten
     environment:                        # Anfang environment Parameter
-      PMA_HOST: db                      # MySQL Datenbank ist db
+      PMA_HOST: datenbank                      # MySQL Datenbank ist db
+  
+  wordpress:
+      depends_on:
+       - datenbank
+      image: wordpress:latest
+      ports:
+       - "8081:80"
+      restart: always
+      networks:                           # Anfang Netzwerkkonfiguration
+      - Net1 
+      environment:
+        WORDPRESS_DB_HOST: datenbank:3306
+        WORDPRESS_DB_USER: user
+        WORDPRESS_DB_PASSWORD: 1234
+        WORDPRESS_DB_NAME: wordpress
 
+volumes:
+  db_data: {}
 networks:                               # Anfang allgemeine Netzwerkkonfiguration
   Net1:                                 # Netzwerk Net1 erstellt
