@@ -17,9 +17,9 @@ In der Lernberuteilung geht es um das Ausetzten und betreiben von einem Service 
 
 # Kapitel 1 Der Service
 
-Als Service wird eine eigene **MySQL** **Datenbank** mit **PHPMyAdmin** administriert. Anstatt per Command Line wird bei PHPMyAdmin die MySQL Datenbank per Webinterface bedient. Durch den Visuellen Faktor und dem übersichtlichem GUI wird die Arbeit mit den MYSQL Datenbank sehr vereinfacht.
+Als Service wird **Wordpress** realisiert. Es benutzt eine **MySQL** Datenbank als Ablage. Zustzlich ist es möglich dank **PHPMyAdmin** per Webinterface die Datenbanken zu administrieren. Durch den Visuellen Faktor und dem übersichtlichem GUI wird die Arbeit mit den MYSQL Datenbank sehr vereinfacht. 
 
-Per Interner Verlinkung zwischen MySQL und PHPMyAdmin kann dies ermöglicht werden.
+Per Interner Verlinkung zwischen MySQL und PHPMyAdmin und MySQL und Wordpress kann dies ermöglicht werden.
 
 ![GUI](Images/GUI.PNG)
 
