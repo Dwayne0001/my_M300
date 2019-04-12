@@ -56,7 +56,7 @@ docker-compose -f ʺPfad\zum\File\docker-compose.ymlʺ up -d --build
 
 Hier der Code des docker-compose.yml File:
 
-![code](Images/code.png)
+![code](Images\code.PNG)
 
 Auf Zeile 4-16 wird der MySQL Container erstellt und konfiguriert
 
